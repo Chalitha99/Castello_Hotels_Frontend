@@ -11,7 +11,7 @@ function Navigationbar() {
                 <Navbar.Link href="/" className='names'>Home</Navbar.Link>
                 <Navbar.Link href="Rooms" className='names'>Rooms</Navbar.Link>
                 <Navbar.Link href="Restaurant" className='names'>Restaurant</Navbar.Link>
-                <Navbar.Link  href="Review" className='names'>Review</Navbar.Link>
+                <Navbar.Link  href="Ratings" className='names'>Review</Navbar.Link>
                 <Navbar.Link href="Aboutus" className='names'>Aboutus</Navbar.Link>
                 <Navbar.Link href="signin"><Button className='log_sign-btn'>Login</Button></Navbar.Link>
                 <Navbar.Link href="signin"><Button className='log_sign-btn'>Signup</Button></Navbar.Link>

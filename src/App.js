@@ -4,6 +4,7 @@ import Navigationbar from './components/Navigationbar';
 import Footerbar from './components/Footerbar';
 import Home from './pages/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Ratings from './pages/Ratings';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <BrowserRouter>
           <Routes>
               <Route path='/' element={<Home/>}></Route>
+              <Route path='/Ratings' element={<Ratings/>}></Route>
               {/* <Route path='/Restaurant' element={<Restaurant/>}></Route>
               <Route path='/Rooms' element={<Rooms/>}></Route>
               <Route path='/Reviews' element={<Reviews/>}></Route>
