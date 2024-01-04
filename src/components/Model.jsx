@@ -11,7 +11,7 @@ export default function Model(props) {
             <div className="flex flex-wrap gap-2">
               <Button
                 onClick={() => setOpenModal(true)}
-                gradientDuoTone="greenToBlue"
+                gradientMonochrome="info"
               >
                 Book Now
               </Button>
@@ -38,8 +38,9 @@ export default function Model(props) {
                   </div>
                 </Modal.Body>
                 <Modal.Footer>
-                  <Button onClick={() => setOpenModal(false)}>Book</Button>
-                  <Button color="gray" onClick={() => setOpenModal(false)}>
+                  <a href='roombooking'>
+                  <Button onClick={() => setOpenModal(false)} gradientMonochrome="info">Book</Button></a>
+                  <Button gradientMonochrome="cyan" onClick={() => setOpenModal(false)}>
                     Back
                   </Button>
                 </Modal.Footer>
