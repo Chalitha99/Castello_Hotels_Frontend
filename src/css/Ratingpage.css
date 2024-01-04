@@ -1,0 +1,21 @@
+.background-photo {
+    background-image: url('../../public/images/ratinghotel.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: auto; /* Adjust the height of the background photo as needed */
+  }
+  
+  /* Additional styles for better visibility of content over the background photo */
+  .rating-card {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Adjust z-index to place other elements on top of the background photo */
+  .navigation-bar,
+  .footer-bar {
+    position: relative;
+    z-index: 2;
+  }
+  
