@@ -2,6 +2,7 @@
 import { Footer } from 'flowbite-react';
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 import "../css/footer.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Footerbar() {
   return (
     
@@ -33,6 +34,7 @@ function Footerbar() {
               
               <ul className='text-center'> 
                   <li>
+                  <FontAwesomeIcon icon="fa-thin fa-folder-open" />
                     <a className="text-white">castello@gmail.com</a>
                   </li>
                   <li>
