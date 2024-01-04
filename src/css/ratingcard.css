@@ -1,0 +1,31 @@
+/* Card Styles */
+.card {
+    max-width: 300px; /* Adjust the max-width as needed */
+    background-color: rgba(169, 169, 169, 0.1); /* Gray transparent background */
+    border: 1px solid #fff; /* White border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  /* User Profile Photo Styles */
+  .card img {
+    border-radius: 50%; /* Make the profile photo round */
+    display: block;
+    margin: 0 auto; /* Center the profile photo */
+  }
+  
+  /* Rating Styles */
+  .card .rating {
+    margin-bottom: 10px; /* Adjust the space between rating and profile photo/comment */
+  }
+  
+  /* Review Comment Styles */
+  .card .review-comment {
+    margin-bottom: 20px; /* Adjust the space between review comment and global ratings */
+  }
+  
+  /* Global Ratings Styles */
+  .card .global-ratings {
+    margin-bottom: 10px; /* Adjust the space at the bottom of the card */
+  }
+  
