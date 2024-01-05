@@ -96,6 +96,7 @@ export default function BookingForm() {
                     Book Your Room
                   </Button>
                   <Button
+                    href="/"
                     gradientMonochrome="info"
                     className="bookbutn"
                     type="submit"
