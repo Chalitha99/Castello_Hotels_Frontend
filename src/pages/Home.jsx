@@ -1,12 +1,22 @@
-import React from 'react'
-import Room from './Room'
+import { Footer } from "flowbite-react";
+import Navigationbar from "../components/Navigationbar";
+import Footerbar from "../components/Footerbar";
+import "../css/home.css";
 
 function Home() {
-  return (
-    <div>
-      <h1>This is home page</h1>
-    </div>
-  )
+    return (<>
+
+        <Navigationbar></Navigationbar>
+        
+    
+        <div className='head_div'>
+            <h1 className='text-center text-white welcome'>Welcome to the Castello</h1>
+            <h3></h3>
+        </div>
+
+        <Footerbar></Footerbar>
+    
+    </>  );
 }
 
-export default Home
+export default Home;

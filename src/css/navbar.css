@@ -1,4 +1,35 @@
+.navcom{
+
+    background-color: #0F1035;
+    height: 100px;
+    padding-top: 30px;
+}
+
+.names {
+    color: white; 
+    font-size: small;
+  }
+  
+
+.names:hover {
+    color:#5D3587; 
+  }
+  
+.nav-col{
+    background-color: #0F1035;
+   border-radius: 0 0 5% 5%/5%;
+   margin-top: 5px;
+    
+}
+
 .names{
     font-size: 20px;
     margin-top: 10px;
 }
+.log_sign-btn{
+    background-color:#5D3587;
+}
+.copyright{
+    background-color: #0F1035;
+}
+
