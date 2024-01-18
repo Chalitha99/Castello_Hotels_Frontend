@@ -10,6 +10,7 @@ import classic from "../images/room/classic.jpg";
 import delux from "../images/room/delux.jpg";
 import family from "../images/room/family.webp";
 import luxury from "../images/room/luxury.jpg";
+import Footerbar from "../components/Footerbar"
 
 console.log(suoerior, bg, suit, classic, family, delux, luxury);
 
@@ -128,6 +129,9 @@ export default function Room() {
           />
         </Card>
       </div>
+      <br></br>
+      <br></br>
+      <Footerbar/>
     </div>
   );
 }

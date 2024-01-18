@@ -16,14 +16,14 @@ export default function BookingForm() {
             Reserve your haven of comfort and style with our exquisite rooms.{" "}
           </span>
         </div>
-        <div className="form">
-          <div className="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
-            <div className="container max-w-screen-lg mx-auto">
+        <div className="formone">
+          <div className=" frm min-h-screen p-6 bg-gray-100 flex items-center justify-center">
+            <div className=" container max-w-screen-lg mx-auto">
               <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
-                <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+                
                   <div className="text-gray-600">
-                    <p className="formtopic">Personal Details</p>
-                    <span className="formsubtopic">
+                    <p className="formtopicone">Personal Details</p>
+                    <span className="formsubtopicone">
                       Please fill out all the fields.
                     </span>
                   </div>
@@ -55,11 +55,11 @@ export default function BookingForm() {
                         <label for="city">City</label>
                         <TextInput id="small" type="text" sizing="sm" />
                       </div>
-                      <div className="md:col-span-2">
+                      <div className="md:col-span-5">
                         <label for="city">Mobile Number</label>
                         <TextInput id="small" type="tel" sizing="sm" />
                       </div>
-                      <div className="md:col-span-2">
+                      <div className="md:col-span-3">
                         <label for="city">Arrival Date</label>
                         <Datepicker />
                       </div>
@@ -67,7 +67,7 @@ export default function BookingForm() {
                         <label for="city">Leaving Date</label>
                         <Datepicker />
                       </div>
-                      <div className="md:col-span-2">
+                      <div className="md:col-span-5 ">
                         <label for="city">Room Type</label>
                         <Select id="rooms" required>
                           <option>Suit Room</option>
@@ -78,7 +78,7 @@ export default function BookingForm() {
                           <option>Luxury Room</option>
                         </Select>
                       </div>
-                      <div className="md:col-span-2">
+                      <div className="md:col-span-3">
                         <label for="city">Number of Adults</label>
                         <TextInput id="small" type="number" sizing="sm" />
                       </div>
@@ -88,7 +88,9 @@ export default function BookingForm() {
                       </div>
                     </div>
                   </div>
+                  <div className="btncontainer">
                   <Button
+                  href="#"
                     gradientMonochrome="info"
                     className="bookbutn"
                     type="submit"
@@ -103,7 +105,7 @@ export default function BookingForm() {
                   >
                     Back to Home
                   </Button>
-                </div>
+                  </div>
               </div>
             </div>
           </div>

@@ -1,5 +1,7 @@
-.form{
-    margin: 100px;
+.formone{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 .bookingheader{
     background: url('../images/room/bg.jpg');
@@ -33,13 +35,25 @@
     font-size: x-large;
     color: whitesmoke;
   }
-  .formtopic{
+  .formtopicone{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     font-weight: 500;
   }
-  .formsubtopic{
+  .formsubtopicone{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     color: lightslategray;
+  }
+
+  .btncontainer{
+    margin: 20px;
+
+  }
+  .bookbutn{
+    margin: 10px;
+  }
+
+  .frm{
+    width: 1000px;
   }

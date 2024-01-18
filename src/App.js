@@ -3,6 +3,7 @@ import "./App.css";
 import Room from "./pages/Room";
 import Home from "./pages/Home";
 import RoomBooking from "./pages/RoomBooking";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home/>}></Route>
         <Route path="room" element={<Room />}></Route>
         <Route path="roombooking" element={<RoomBooking />}></Route>
+        <Route path="admin" element={<Admin/>}></Route>
       </Routes>
     </BrowserRouter>
   );
