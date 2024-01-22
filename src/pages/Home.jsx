@@ -3,7 +3,7 @@ import Navigationbar from "../components/Navigationbar";
 import Footerbar from "../components/Footerbar";
 import "../css/home.css";
 import Home_Section from "../components/Home_Section";
-import Service from "../components/Service";
+
 
 function Home() {
     return (<>
@@ -16,7 +16,7 @@ function Home() {
             <h3></h3>
         </div>
         <Home_Section></Home_Section>
-        <Service></Service>
+        
         <Footerbar></Footerbar>
     
     </>  );
