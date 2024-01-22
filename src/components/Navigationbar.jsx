@@ -9,7 +9,7 @@ function Navigationbar() {
             <Navbar.Toggle />
             <Navbar.Collapse className="nav-col">
                 <Navbar.Link href="/" className='names'>Home</Navbar.Link>
-                <Navbar.Link href="Rooms" className='names'>Rooms</Navbar.Link>
+                <Navbar.Link href="room" className='names'>Rooms</Navbar.Link>
                 <Navbar.Link href="Restaurant" className='names'>Restaurant</Navbar.Link>
                 <Navbar.Link  href="Ratings" className='names'>Review</Navbar.Link>
                 <Navbar.Link href="Aboutus" className='names'>Aboutus</Navbar.Link>
