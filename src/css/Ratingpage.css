@@ -5,9 +5,6 @@
     height: auto;
     width: auto; /* Adjust the height of the background photo as needed */
   }
-  .middle-content{
-    padding-top: 50px;
-  }
   
   /* Additional styles for better visibility of content over the background photo */
   .rating-card {
@@ -20,14 +17,4 @@
   .footer-bar {
     position: relative;
     z-index: 2;
-  }
-
-  .globle_rating {
-   -webkit-text-fill-color: #fff; 
-  }
-
-  .starrating {
-    -webkit-text-fill-color: #fff;
-    padding-top: 10px;
-  }
-  
+  }  
