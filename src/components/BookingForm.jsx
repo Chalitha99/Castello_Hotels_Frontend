@@ -18,54 +18,59 @@ export default function BookingForm() {
     LeavingDate: "",
     NoAdults: "",
     NoChildren: "",
-});
+    RoomType: "", 
+  });
 
-const [successMessage, setSuccessMessage] = useState("");
-const [errorMessage, setErrorMessage] = useState("");
-const [leavingError, setleavingError] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [leavingError, setleavingError] = useState("");
 
-const handleChange = (e) => {
+  const handleChange = (e) => {
     setFormData({
-        ...formData,
-        [e.target.name]: e.target.value,
+      ...formData,
+      [e.target.name]: e.target.value,
     });
-};
+  };
 
-const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Get today's date
     const today = new Date();
     // Remove time from today's date
     today.setHours(0, 0, 0, 0);
 
-    // Convert formData.ArrivalDate to a Date object
+    // Convert formData.ArrivalDate and formData.LeavingDate to Date objects
     const arrivalDate = new Date(formData.ArrivalDate);
     const leavingDate = new Date(formData.LeavingDate);
 
     // Check if arrivalDate is later than today
     if (arrivalDate < today) {
-        setErrorMessage('Arrival date should be later than today');
-        return;
-    }
-    if (leavingDate <= arrivalDate) {
-      setleavingError('Leaving date should be later than arrival date');
+      setErrorMessage("Arrival date should be later than today");
       return;
-  }
+    }
+    // Check if leavingDate is later than arrivalDate
+    if (leavingDate <= arrivalDate) {
+      setleavingError("Leaving date should be later than arrival date");
+      return;
+    }
 
-    console.log(formData);
+    console.log("this is form data ", formData);
     axios
-        .post("http://localhost:8000/reservations/", formData)
-        .then((response) => {
-            console.log(response);
-            setSuccessMessage("Successfully Reserved your room.Thank you for visiting us.Enjoy Your vacation..");
-            setErrorMessage('');
-            setleavingError('');
-        })
-        .catch((error) => {
-            console.log(error);
-            setErrorMessage("An error occurred while reserving the room");
-        });
-};
+      .post("http://localhost:8000/reservations/", formData)
+      .then((response) => {
+        console.log("this is response data ", response);
+        console.log(response);
+        setSuccessMessage(
+          "Successfully Reserved your room. Thank you for visiting us. Enjoy Your vacation.."
+        );
+        setErrorMessage("");
+        setleavingError("");
+      })
+      .catch((error) => {
+        console.log(error);
+        setErrorMessage("An error occurred while reserving the room");
+      });
+  };
   return (
     <div>
       <Navigationbar />
@@ -148,7 +153,9 @@ const handleSubmit = (e) => {
                       </div>
 
                       <div className="md:col-span-3">
-                      {errorMessage && <div className="error-message">{errorMessage}</div>}
+                        {errorMessage && (
+                          <div className="error-message">{errorMessage}</div>
+                        )}
                         <label for="ArrivalDate">Arrival Date</label>
                         <TextInput
                           name="ArrivalDate"
@@ -166,7 +173,9 @@ const handleSubmit = (e) => {
                       </div>
 
                       <div className="md:col-span-2">
-                      {leavingError && <div className="error-message">{leavingError}</div>}
+                        {leavingError && (
+                          <div className="error-message">{leavingError}</div>
+                        )}
                         <label for="LeavingDate">Leaving Date</label>
                         <TextInput
                           name="LeavingDate"
@@ -186,6 +195,20 @@ const handleSubmit = (e) => {
                       <div className="md:col-span-5 ">
                         <label for="roomType">Room Type</label>
                         <Select
+                          name="RoomType"
+                          required
+                          value={formData.RoomType}
+                          onChange={handleChange}
+                          sizing="sm"
+                        >
+                          <option value="SR">Suit Room</option>
+                          <option value="FR">Family Room</option>
+                          <option value="DR">Delux Room</option>
+                          <option value="CR">Classic Room</option>
+                          <option value="SuR">Superior Room</option>
+                          <option value="LR">Luxury Room</option>
+                        </Select>
+                        {/* <Select
                           name="roomType"
                           required
                           onChange={(e) =>
@@ -201,7 +224,7 @@ const handleSubmit = (e) => {
                           <option value="Classic Room">Classic Room</option>
                           <option value="Superior Room">Superior Room</option>
                           <option value="Luxury Room">Luxury Room</option>
-                        </Select>
+                        </Select> */}
                       </div>
 
                       <div className="md:col-span-3">
@@ -231,7 +254,7 @@ const handleSubmit = (e) => {
                   </div>
                   <div className="btncontainer">
                     <Button
-                    style={{width: '100%'}}
+                      style={{ width: "100%" }}
                       gradientMonochrome="info"
                       className="bookbutn"
                       type="submit"
@@ -239,14 +262,16 @@ const handleSubmit = (e) => {
                       Book Your Room
                     </Button>
                     <Button
-                    style={{width: '100%'}}
+                      style={{ width: "100%" }}
                       href="/"
                       gradientMonochrome="info"
                       className="bookbutn"
                     >
                       Back to Home
                     </Button>
-                    {successMessage && <p className="successMsg">{successMessage}</p>}
+                    {successMessage && (
+                      <p className="successMsg">{successMessage}</p>
+                    )}
                   </div>
                 </form>
               </div>
