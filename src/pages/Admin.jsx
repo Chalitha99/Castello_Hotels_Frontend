@@ -10,6 +10,7 @@ function Admin() {
   return (
     <div>
       <div className="dashboard">
+<<<<<<< Updated upstream
       <Dashboard/>
       <div id='userlist'>
       <UserList/>
@@ -17,6 +18,9 @@ function Admin() {
       
 
       
+=======
+      <Dashboard></Dashboard>
+>>>>>>> Stashed changes
       </div>
     </div>
   )

@@ -10,8 +10,13 @@ function Navigationbar() {
             <Navbar.Collapse className="nav-col">
                 <Navbar.Link href="/" className='names'>Home</Navbar.Link>
                 <Navbar.Link href="room" className='names'>Rooms</Navbar.Link>
+<<<<<<< Updated upstream
                 <Navbar.Link href="Restaurant" className='names'>Restaurant</Navbar.Link>
                 <Navbar.Link  href="Review" className='names'>Review</Navbar.Link>
+=======
+                <Navbar.Link href="restaurant" className='names'>Restaurant</Navbar.Link>
+                <Navbar.Link href="review" className='names'>Review</Navbar.Link>
+>>>>>>> Stashed changes
                 <Navbar.Link href="admin" className='names'>Aboutus</Navbar.Link>
                 <Navbar.Link href="signin"><Button className='log_sign-btn'>Login</Button></Navbar.Link>
                 <Navbar.Link href="signin"><Button className='log_sign-btn'>Signup</Button></Navbar.Link>
