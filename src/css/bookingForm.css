@@ -57,3 +57,11 @@
   .frm{
     width: 1000px;
   }
+.successMsg{
+  color: rgb(0, 105, 14);
+  font-weight: bold;
+}
+.error-message{
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
