@@ -12,7 +12,7 @@ function Navigationbar() {
                 <Navbar.Link href="room" className='names'>Rooms</Navbar.Link>
                 <Navbar.Link href="Restaurant" className='names'>Restaurant</Navbar.Link>
                 <Navbar.Link  href="Review" className='names'>Review</Navbar.Link>
-                <Navbar.Link href="Aboutus" className='names'>Aboutus</Navbar.Link>
+                <Navbar.Link href="admin" className='names'>Aboutus</Navbar.Link>
                 <Navbar.Link href="signin"><Button className='log_sign-btn'>Login</Button></Navbar.Link>
                 <Navbar.Link href="signin"><Button className='log_sign-btn'>Signup</Button></Navbar.Link>
             </Navbar.Collapse>

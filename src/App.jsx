@@ -13,6 +13,7 @@ function App() {
         <Route path="room" element={<Room />}></Route>
         <Route path="roombooking" element={<RoomBooking />}></Route>
         <Route path="admin" element={<Admin/>}></Route>
+        
       </Routes>
     </BrowserRouter>
   );

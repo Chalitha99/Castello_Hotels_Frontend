@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Sidebar } from "flowbite-react";
 import "../css/dashboard.css"
+import axios from "axios";
 import {
   HiArrowSmRight,
   HiChartPie,
@@ -10,8 +11,9 @@ import {
   HiUser,
 } from "react-icons/hi";
 
-function Dashboard() {
-  return (
+function Dashboard(props) {
+
+return (
     <div>
         <Sidebar className="sidebar" aria-label="Sidebar with multi-level dropdown example">
           <Sidebar.Items>

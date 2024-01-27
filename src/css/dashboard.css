@@ -13,3 +13,17 @@
   background-color: #2E2F5E;
   color: #ffffff;
 }
+
+#userlist{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+#userlistbox{
+
+  width: 140%;
+  height: 100%;
+
+}
