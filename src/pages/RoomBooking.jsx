@@ -6,6 +6,7 @@ export default function RoomBooking() {
   return (
     <div>
       <BookingForm/>
+      
       <Footerbar/>
     </div>
   )
