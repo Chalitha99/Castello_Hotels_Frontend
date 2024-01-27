@@ -10,17 +10,11 @@ function Admin() {
   return (
     <div>
       <div className="dashboard">
-<<<<<<< Updated upstream
-      <Dashboard/>
+      <Dashboard></Dashboard>
       <div id='userlist'>
       <UserList/>
       </div>
       
-
-      
-=======
-      <Dashboard></Dashboard>
->>>>>>> Stashed changes
       </div>
     </div>
   )
