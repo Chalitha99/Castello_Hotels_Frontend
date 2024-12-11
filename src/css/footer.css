@@ -1,3 +1,6 @@
 .footer-bg{
     background-color: #0F1035;
+    height: 300px;
+    height: fit-content;
+    color: aliceblue;
 }

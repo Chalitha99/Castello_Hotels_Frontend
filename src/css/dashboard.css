@@ -1,0 +1,15 @@
+.dashboard{
+    background-color: #0F1035;
+    display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #0F1035;
+  }
+
+  .sidebar a.active {
+  background-color: #2E2F5E;
+  color: #ffffff;
+}
